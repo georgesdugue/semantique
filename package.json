@@ -1,0 +1,31 @@
+{
+  "name": "semantique",
+  "version": "1.0.0",
+  "description": "The zero-effort stylesheet for clean HTML. Just write semantic HTML, Sémantique does the rest.",
+  "main": "semantique.css",
+  "files": [
+    "semantique.css",
+    "semantique.min.css"
+  ],
+  "scripts": {
+    "minify": "lightningcss --minify semantique.css -o semantique.min.css",
+    "build": "npm run minify"
+  },
+  "keywords": [
+    "css",
+    "classless",
+    "semantic",
+    "framework",
+    "stylesheet",
+    "html5"
+  ],
+  "author": "Georges Dugué",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/georgesdugue/semantique.git"
+  },
+  "devDependencies": {
+    "lightningcss-cli": "^1.28.0"
+  }
+}
