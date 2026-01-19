@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sémantique Demo - Kitchen Sink</title>
+  <link rel="stylesheet" href="../semantique.css">
+</head>
+<body>
+  <nav>
+    <a href="#"><strong>Sémantique</strong></a>
+    <ul>
+      <li><a href="#typography">Typography</a></li>
+      <li><a href="#interactive">Interactive</a></li>
+      <li><a href="#layout">Layout</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <h1>Sémantique Demo</h1>
+    <p>This page showcases every element styled by <strong>Sémantique</strong>. No classes needed&mdash;just semantic HTML.</p>
+
+    <section id="typography">
+      <h2>Typography</h2>
+
+      <h3>Headings</h3>
+      <h1>Heading 1</h1>
+      <h2>Heading 2</h2>
+      <h3>Heading 3</h3>
+      <h4>Heading 4</h4>
+      <h5>Heading 5</h5>
+      <h6>Heading 6</h6>
+
+      <h3>Paragraph &amp; Inline Elements</h3>
+      <p>This is a standard paragraph with <strong>bold text</strong>, <em>italic text</em>, and a <a href="#">hyperlink</a>. You can also use <code>inline code</code> for technical terms.</p>
+
+      <p>Here's text with <mark>highlighted content</mark>, <del>deleted text</del>, <ins>inserted text</ins>, and <small>small text</small>.</p>
+
+      <p>Press <kbd>Ctrl</kbd> + <kbd>S</kbd> to save. The <abbr title="HyperText Markup Language">HTML</abbr> abbreviation has a dotted underline.</p>
+
+      <h3>Blockquote</h3>
+      <blockquote>
+        <p>The web was designed to be universal. When you design with semantic HTML, you embrace that philosophy.</p>
+      </blockquote>
+
+      <h3>Lists</h3>
+      <h4>Unordered List</h4>
+      <ul>
+        <li>First item in unordered list</li>
+        <li>Second item with more text</li>
+        <li>Third item</li>
+      </ul>
+
+      <h4>Ordered List</h4>
+      <ol>
+        <li>First ordered item</li>
+        <li>Second ordered item</li>
+        <li>Third ordered item</li>
+      </ol>
+
+      <h3>Horizontal Rule</h3>
+      <hr>
+
+      <h3>Code Block</h3>
+      <pre><code>function greet(name) {
+  return `Hello, ${name}!`;
+}
+
+console.log(greet('World'));</code></pre>
+
+      <h3>Details/Summary (Disclosure)</h3>
+      <details>
+        <summary>Click to expand this section</summary>
+        <p>This content is hidden until the user clicks the summary. Useful for FAQs, collapsible sections, and progressive disclosure.</p>
+      </details>
+    </section>
+
+    <section id="interactive">
+      <h2>Interactive Elements</h2>
+
+      <h3>Buttons</h3>
+      <p>
+        <button>Primary Button</button>
+        <input type="submit" value="Submit Input">
+        <input type="button" value="Button Input">
+        <input type="reset" value="Reset Input">
+      </p>
+      <p>
+        <a href="#" role="button">Link as Button</a>
+      </p>
+
+      <h3>Form Elements</h3>
+      <form>
+        <label for="name">Name</label>
+        <input type="text" id="name" placeholder="Enter your name">
+
+        <label for="email">Email</label>
+        <input type="email" id="email" placeholder="you@example.com">
+
+        <label for="password">Password</label>
+        <input type="password" id="password" placeholder="Your password">
+
+        <label for="number">Number</label>
+        <input type="number" id="number" placeholder="42">
+
+        <label for="url">Website</label>
+        <input type="url" id="url" placeholder="https://example.com">
+
+        <label for="message">Message</label>
+        <textarea id="message" rows="4" placeholder="Type your message here..."></textarea>
+
+        <label for="country">Country</label>
+        <select id="country">
+          <option>United States</option>
+          <option>Canada</option>
+          <option>United Kingdom</option>
+          <option>Australia</option>
+        </select>
+
+        <button type="submit">Submit Form</button>
+      </form>
+    </section>
+
+    <section id="layout">
+      <h2>Layout Elements</h2>
+
+      <h3>Figure &amp; Figcaption</h3>
+      <figure>
+        <img src="https://picsum.photos/800/400" alt="Random placeholder image">
+        <figcaption>A random image from Picsum with a descriptive caption.</figcaption>
+      </figure>
+
+      <h3>Table</h3>
+      <table>
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>Role</th>
+            <th>Status</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Alice Johnson</td>
+            <td>Developer</td>
+            <td>Active</td>
+          </tr>
+          <tr>
+            <td>Bob Smith</td>
+            <td>Designer</td>
+            <td>Active</td>
+          </tr>
+          <tr>
+            <td>Carol Williams</td>
+            <td>Manager</td>
+            <td>On Leave</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section>
+      <h2>Card Grid Demo</h2>
+      <p>When a <code>&lt;section&gt;</code> contains direct <code>&lt;article&gt;</code> children, they automatically form a responsive grid.</p>
+
+      <section>
+        <article>
+          <h3>Card One</h3>
+          <p>This card demonstrates the automatic grid layout for article elements inside a section.</p>
+        </article>
+        <article>
+          <h3>Card Two</h3>
+          <p>Cards resize and reflow based on viewport width. No classes needed.</p>
+        </article>
+        <article>
+          <h3>Card Three</h3>
+          <p>The grid uses CSS <code>:has()</code> selector to detect this pattern automatically.</p>
+        </article>
+      </section>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Sémantique. The zero-effort stylesheet for clean HTML.</p>
+  </footer>
+</body>
+</html>
