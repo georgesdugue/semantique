@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Sémantique Demo - Kitchen Sink</title>
   <link rel="stylesheet" href="../semantique.css">
+  <script src="../theme.js" defer></script>
 </head>
 <body>
   <nav>
@@ -13,6 +14,7 @@
       <li><a href="#typography">Typography</a></li>
       <li><a href="#interactive">Interactive</a></li>
       <li><a href="#layout">Layout</a></li>
+      <li><button id="theme-toggle" onclick="toggleTheme()" title="Toggle theme">Toggle Theme</button></li>
     </ul>
   </nav>
 
@@ -117,8 +119,38 @@ console.log(greet('World'));</code></pre>
           <option>Australia</option>
         </select>
 
+        <fieldset>
+          <legend>Preferences</legend>
+          <label><input type="checkbox" checked> Subscribe to newsletter</label>
+          <label><input type="checkbox"> Enable notifications</label>
+        </fieldset>
+
+        <fieldset>
+          <legend>Contact Method</legend>
+          <label><input type="radio" name="contact" checked> Email</label>
+          <label><input type="radio" name="contact"> Phone</label>
+          <label><input type="radio" name="contact"> Mail</label>
+        </fieldset>
+
         <button type="submit">Submit Form</button>
       </form>
+
+      <h3>Progress &amp; Meter</h3>
+      <label for="progress-demo">Download progress:</label>
+      <progress id="progress-demo" value="70" max="100">70%</progress>
+
+      <label for="meter-demo">Disk usage:</label>
+      <meter id="meter-demo" value="0.6" min="0" max="1" low="0.3" high="0.7" optimum="0.5">60%</meter>
+
+      <h3>Dialog Modal</h3>
+      <button onclick="document.getElementById('demo-dialog').showModal()">Open Dialog</button>
+      <dialog id="demo-dialog">
+        <h3>Modal Dialog</h3>
+        <p>This is a native HTML dialog element. Click outside or press Escape to close.</p>
+        <form method="dialog">
+          <button>Close</button>
+        </form>
+      </dialog>
     </section>
 
     <section id="layout">

@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Building a CSS Framework - Blog Post Example</title>
+  <link rel="stylesheet" href="../semantique.css">
+  <script src="../theme.js" defer></script>
+</head>
+<body>
+  <nav>
+    <a href="#"><strong>My Blog</strong></a>
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">Archive</a></li>
+      <li><a href="#">About</a></li>
+      <li><button id="theme-toggle" onclick="toggleTheme()">Theme</button></li>
+    </ul>
+  </nav>
+
+  <main>
+    <article>
+      <header>
+        <h1>Building a CSS Framework from Scratch</h1>
+        <p><small>Published on <time datetime="2025-01-15">January 15, 2025</time> by <a href="#">Jane Developer</a></small></p>
+      </header>
+
+      <p>Creating a CSS framework might seem daunting at first, but with the right approach, it can be a rewarding experience. In this post, I'll walk you through the key decisions and techniques that make a classless framework work.</p>
+
+      <h2>Why Classless?</h2>
+      <p>The main advantage of a classless approach is <strong>simplicity</strong>. Developers can focus on writing semantic HTML without worrying about which classes to apply. The framework handles the visual presentation automatically.</p>
+
+      <blockquote>
+        <p>"The best CSS is the CSS you never had to write."</p>
+        <cite>— A wise developer</cite>
+      </blockquote>
+
+      <h2>Key Techniques</h2>
+      <p>Here are the main techniques we used:</p>
+
+      <ol>
+        <li><strong>CSS Custom Properties:</strong> Variables make theming trivial</li>
+        <li><strong>The :has() Selector:</strong> Enables parent-based styling</li>
+        <li><strong>Semantic HTML5:</strong> Use the right elements for the job</li>
+      </ol>
+
+      <h3>Example: Automatic Card Grid</h3>
+      <p>Using <code>:has()</code>, we can detect when a section contains articles and automatically apply a grid layout:</p>
+
+      <pre><code>section:has(> article) {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+}</code></pre>
+
+      <h2>Performance Considerations</h2>
+      <p>A framework should be lightweight. Here's how our framework compares:</p>
+
+      <table>
+        <thead>
+          <tr>
+            <th>Framework</th>
+            <th>Size (min)</th>
+            <th>Classes?</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Sémantique</td>
+            <td>~6KB</td>
+            <td>No</td>
+          </tr>
+          <tr>
+            <td>Simple.css</td>
+            <td>~4KB</td>
+            <td>No</td>
+          </tr>
+          <tr>
+            <td>Pico CSS</td>
+            <td>~10KB</td>
+            <td>Minimal</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <h2>Try It Yourself</h2>
+      <p>Press <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>I</kbd> to open DevTools and inspect how this page is styled. Notice there are no classes in the HTML!</p>
+
+      <details>
+        <summary>View the full source code</summary>
+        <p>You can find the complete source code on <a href="#">GitHub</a>. The repository includes examples, documentation, and a demo page.</p>
+      </details>
+
+      <hr>
+
+      <footer>
+        <p><strong>Tags:</strong> <a href="#">CSS</a>, <a href="#">Web Development</a>, <a href="#">Tutorial</a></p>
+      </footer>
+    </article>
+  </main>
+
+  <aside>
+    <h3>About the Author</h3>
+    <p>Jane is a frontend developer who loves building tools that make other developers' lives easier.</p>
+
+    <h3>Related Posts</h3>
+    <ul>
+      <li><a href="#">Understanding CSS Cascade Layers</a></li>
+      <li><a href="#">Modern CSS Reset Techniques</a></li>
+      <li><a href="#">The Power of CSS Custom Properties</a></li>
+    </ul>
+  </aside>
+
+  <footer>
+    <p>&copy; 2025 My Blog. Built with Sémantique.</p>
+  </footer>
+</body>
+</html>
