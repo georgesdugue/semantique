@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sémantique Demo</title>
+    <link rel="stylesheet" href="semantique.css">
+    <script src="theme.js"></script>
+</head>
+<body>
+
+    <nav>
+        <strong>Sémantique</strong>
+        <ul>
+            <li><a href="#typography">Type</a></li>
+            <li><a href="#elements">Elements</a></li>
+            <li><a href="#forms">Forms</a></li>
+            <li><button id="theme-toggle" onclick="toggleTheme()">🌙 Dark Mode</button></li>
+        </ul>
+    </nav>
+
+    <main>
+        <header>
+            <h1>Build faster with zero classes.</h1>
+            <p>Semantique is a classless CSS framework that turns standard HTML into a beautiful, responsive website. No <code>.btn</code>, no <code>.container</code>, no headache.</p>
+            <button>Download on GitHub</button>
+        </header>
+
+        <section id="typography">
+            <h2>Typography</h2>
+            <p>This is a standard paragraph. It uses a <strong>modular scale</strong> for perfect readability. We even support <code>inline code</code> and <kbd>shortcuts</kbd>.</p>
+            <blockquote>
+                "The best code is the code you never had to write."
+                <cite>— A happy developer</cite>
+            </blockquote>
+        </section>
+
+        <section id="elements">
+            <h2>Automatic Grid Logic</h2>
+            <p>Place <code>&lt;article&gt;</code> tags inside a <code>&lt;section&gt;</code> to create an instant card layout.</p>
+            <section>
+                <article>
+                    <h3>Lightweight</h3>
+                    <p>Under 5kb minified and gzipped. No dependencies.</p>
+                </article>
+                <article>
+                    <h3>Responsive</h3>
+                    <p>The grid and typography adjust to any screen size.</p>
+                </article>
+                <article>
+                    <h3>Dark Mode</h3>
+                    <p>Respects your user's system preferences automatically.</p>
+                </article>
+            </section>
+        </section>
+
+        <section id="forms">
+            <h2>Interactive Forms</h2>
+            <form>
+                <div>
+                    <label>Your Name</label>
+                    <input type="text" placeholder="Jane Doe">
+                </div>
+                <div>
+                    <label>Email Address</label>
+                    <input type="email" placeholder="jane@example.com">
+                </div>
+                <div>
+                    <label>Inquiry Type</label>
+                    <select>
+                        <option>General Question</option>
+                        <option>Feature Request</option>
+                    </select>
+                </div>
+                <button type="submit">Send Message</button>
+            </form>
+        </section>
+    </main>
+
+    <aside>
+        <h3>Resources</h3>
+        <p>Semantique works best with semantic HTML5 tags.</p>
+        <ul>
+            <li><a href="#">Documentation</a></li>
+            <li><a href="#">Style Guide</a></li>
+            <li><a href="#">Showcase</a></li>
+        </ul>
+    </aside>
+
+    <footer>
+        <p>&copy; 2026 Semantique CSS. Built for the open web.</p>
+    </footer>
+
+</body>
+</html>
